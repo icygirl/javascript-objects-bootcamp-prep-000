@@ -2,3 +2,6 @@ var playlist = new Object({'Fleetwood Mac': 'Go Your Own Way','Lionel Riche':'He
 function updatePlaylist(playlist, artistName, songTitle) {
   return Object.assign({},playlist,{ [artistName]: songTitle})
 }
+function removeFromPlaylist(playlist, artistName) {
+  delete playlist.artistName;
+}
